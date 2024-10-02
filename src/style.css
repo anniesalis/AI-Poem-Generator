@@ -10,15 +10,20 @@ h1 {
     line-height: 1.5;
 }
 form {
+    
+    display: flex;
+}
+.form-wrap {
     padding: 30px;
     background-color: white;
     border-radius: 10px;
-    display: flex;
-}
-.main-button {
     margin-bottom: 30px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);;
 }
-.instructions {
+.hint {line-height: 1.5;
+margin-top: 5px;
+font-size: 12px;}
+.instruction {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
     width: 80%;
@@ -46,9 +51,11 @@ form {
     font-size: 16px;
     background-color: white;
     padding: 20px;
-    line-height: 2px;
+    line-height: 2;
+    line-break: ;
     border-left: 3px solid purple;
     box-shadow: 0px 4px 30px rgba(65, 50, 100, 0.08);
+    
 }
 footer {
     text-align: center;

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Poem Generator</title>
 </head>
@@ -10,19 +12,31 @@
     <div class="container">
     <h1>Poem Generator</h1>
     <main class="main-button">
-
-        <form>
+<div class="form-wrap">
+    
+        <form id="form-generator-form">
             <input type="text" placeholder="enter topic of your choice" 
             autofocus 
             required
             autocomplete="off"
-            class="instructions"
-            /> 
-            <input type="submit" class="submit-button"/>
-        </form>
-    </main>
-<div class="poem">The Little Black Bird</div>
-    <footer>Coded by <a href="">Annie Salis</a> Open Source on <a href="Github"></a> and Hosted by <a href="">Netlify</a>    <script src="src/index.js"></script>
+            class="instruction"
+            id="instruction"
+            > 
+            <input type="submit" class="submit-button">
+            <br>
+            </form>
+        <small class="hint">e.g: flower, mothers</small>
+
     </div>
+    </main>
+<div class="poem" id="poem"></div>
+
+       
+
+    <footer>Coded by <a href="">Annie Salis</a> Open Source on <a href="Github"></a> and Hosted by <a href="">Netlify</a> 
+          
+    
+    </div>
+    <script src="src/index.js"></script>
     </body>
 </html>
