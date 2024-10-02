@@ -19,8 +19,7 @@ function displayPoem(response) {
   let poemElement = document.querySelector("#poem");
   
   poemElement.innerHTML= `<div class = "generating">⌛generating a poem...</div>`;
-  
-    axios.get(apiUrl).then(displayPoem);
+  axios.get(apiUrl).then(displayPoem);
   
   }
   let poemFormElement = document.querySelector("#form-generator-form");
